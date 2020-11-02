@@ -17,9 +17,7 @@ entry.grid(row=1, column=0, columnspan=3, padx=10, pady=10)
 def button_click(number):
 
     current = entry.get()
-    
     entry.delete(0, END)
-    
     entry.insert(0, str(current) + str(number))
 
 def button_clear():
@@ -29,79 +27,52 @@ def button_clear():
 def button_add():
 
     first_number = int(entry.get())
-    
     global f_num
-    
     global math
-    
     math = "addition"
-    
     f_num = int(first_number)
-    
     entry.delete(0, END)
 
 def button_subtract():
     
     first_number = int(entry.get())
-    
     global f_num
-    
     global math
-    
     math = "subtraction"
-    
     f_num = int(first_number)
-    
     entry.delete(0, END)
 
 def button_multiply():
     
     first_number = int(entry.get())
-    
     global f_num
-    
     global math
-    
     math = "multiplication"
-    
     f_num = int(first_number)
-    
     entry.delete(0, END)
 
 def button_divide():
     
     first_number = int(entry.get())
-    
     global f_num
-    
     global math
-    
     math = "division"
-    
     f_num = int(first_number)
-    
     entry.delete(0, END)
 
 def button_power():
     
     first_number = int(entry.get())
-    
     global f_num
-    
     global math
-    
     math = "potentiation"
-    
     f_num = int(first_number)
-    
     entry.delete(0, END)
 
 def button_equal():
     
     second_number = entry.get()
-    
     entry.delete(0, END)
-
     if math == "addition":
         entry.insert(0, int(f_num) + int(second_number))
     if math == "substraction":
